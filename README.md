@@ -5,7 +5,7 @@ Search plugin for QGIS 2.0 based on @AstunTechnology's QGIS Gazetteer Search plu
 
 This plugin requires QGIS 2.0+ and the QGIS Gazetteer Plugin installed.  It will also need a webserver (Apache), a database (PostgeSQL/PostGIS), Python 2.7 and psycopg2, the python/postgresql connector.
 
-1. Download the zipped plugin from https://github.com/AstunTechnology/QGIS-Gazetteer-Plugin and unzip it into C:\Users\<Your User Name>\.qgis2\python\plugins\gazetteersearch (make sure that the directory is called gazetteersearch and all the files are in this folder and not a subfolder)
+1. Download the zipped plugin from https://github.com/AstunTechnology/QGIS-Gazetteer-Plugin and unzip it into C:\Users\Your User Name\\.qgis2\python\plugins\gazetteersearch (make sure that the directory is called gazetteersearch and all the files are in this folder and not a subfolder)
 
 2. In the "gazetteers" subfolder, edit config.ini to include the gazetteers you want to search e.g:
 
