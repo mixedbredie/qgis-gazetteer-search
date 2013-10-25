@@ -15,7 +15,7 @@ This plugin requires QGIS 2.0+ and the QGIS Gazetteer Plugin installed.  It will
   [LSG]
   gazetteer:lsg
 
-The other gazetteers listed in the config.ini can be removed (Astun, Geonames, Yahoo) which I did as I couldn't get the proxy authentication to work through the firewall.  Any gazetteers listed here will show up in the plugin in QGIS.
+  The other gazetteers listed in the config.ini can be removed (Astun, Geonames, Yahoo) which I did as I couldn't get the proxy authentication to work through the firewall.  Any gazetteers listed here will show up in the plugin in QGIS.
 
 3. Create a file called llpg.py (ie, the same name that you specified in the config.ini file) – see the attached version to duplicate and edit (the URL will need to be changed to point to your own web server).
 
@@ -24,6 +24,8 @@ The other gazetteers listed in the config.ini can be removed (Astun, Geonames, Y
 5. You could use the latest Apache web server (http://www.apachehaus.com/cgi-bin/download.plx) installed on your own PC in which case the URL will be http://localhost/cgi-bin/llpg_pg.py otherwise if installed on another machine adjust the URL accordingly.
 
 6. Create a file in the cgi-bin folder of your web server. I have attached a script llpg_pg.py which you should be able to tweak to connect to your Postgres/PostGIS database. For each gazetteer listed in gazetteers/config.ini there will be a corresponding file in the gazetteers directory and another in the cgi-bin directory of your webserver.
+
+7. Check the httpd.conf and make sure the cgi-bin module is enabled, the path to apache2 is correct and permissions set to allow access. This may need to be tweaked to suit your environment.
 
 This is the way that we have set up the plugin, with a web service generating search results in JSON format, which the plugin then reads.  You might be able to avoid using the web service by doing the SQL query directly within the plugin code, but the web service is useful as it can be re-used by other applications.
 
