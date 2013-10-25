@@ -3,7 +3,7 @@ qgis-gazetteer-search
 
 Search plugin for QGIS 2.0 based on @AstunTechnology's QGIS Gazetteer Search plugin by Nathan Woodrow (@NathanW2). Enhancements by Matt Travis, Kevin Williams and Simon Miles (and probably others).
 
-This plugin requires QGIS 2.0+ and the QGIS Gazetteer Plugin installed.  It will also need a webserver (Apache), a database (PostgeSQL/PostGIS), Python 2.7 and psycopg2, the python/postgresql connector.
+This plugin requires QGIS 2.0+ and the QGIS Gazetteer Plugin installed.  It will also need a webserver (Apache), a database (PostgeSQL/PostGIS), Python 2.7 and psycopg2, the python/postgresql connector. I have it installed and running on Windows 7 Professional.
 
 1. Download the zipped plugin from https://github.com/AstunTechnology/QGIS-Gazetteer-Plugin and unzip it into C:\Users\Your User Name\\.qgis2\python\plugins\gazetteersearch (make sure that the directory is called gazetteersearch and all the files are in this folder and not a subfolder)
 
@@ -19,7 +19,7 @@ The other gazetteers listed in the config.ini can be removed (Astun, Geonames, Y
 
 3. Create a file called llpg.py (ie, the same name that you specified in the config.ini file) – see the attached version to duplicate and edit (the URL will need to be changed to point to your own web server).
 
-4. On the web server machine, install Python 2.7 and psycopg2 from http://www.stickpeople.com/projects/python/win-psycopg/2.4.6/psycopg2-2.4.6.win32-py2.7-pg9.2.2-release.exe.
+4. On the web server machine, install Python 2.7 (http://www.python.org/download/releases/2.7.5/) and psycopg2 ( http://www.stickpeople.com/projects/python/win-psycopg/) choosing the correct version to match your set up.
 
 5. You could use the latest Apache web server (http://www.apachehaus.com/cgi-bin/download.plx) installed on your own PC in which case the URL will be http://localhost/cgi-bin/llpg_pg.py otherwise if installed on another machine adjust the URL accordingly.
 
