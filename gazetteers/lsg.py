@@ -1,3 +1,5 @@
+# LSG file
+
 import json
 import collections
 
