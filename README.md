@@ -7,7 +7,7 @@ This plugin requires QGIS 2.0+ and the QGIS Gazetteer Plugin installed.  It will
 
 1. Download the zipped plugin from https://github.com/AstunTechnology/QGIS-Gazetteer-Plugin and unzip it into C:\Users\Your User Name\\.qgis2\python\plugins\gazetteersearch (make sure that the directory is called gazetteersearch and all the files are in this folder and not a subfolder)
 
-2. replace the gazetteersearch.py file with the gazetteersearch.py file in this repo 
+2. The plugin mentioned above has been updated to work with both 1.8 and 2.0.
 
 3. In the "gazetteers" subfolder, edit config.ini to include the gazetteers you want to search e.g:
 
