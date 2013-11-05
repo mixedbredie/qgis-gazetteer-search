@@ -31,4 +31,6 @@ This plugin requires QGIS 2.0+ and the QGIS Gazetteer Plugin installed.  It will
 
 This is the way that we have set up the plugin, with a web service generating search results in JSON format, which the plugin then reads.  You might be able to avoid using the web service by doing the SQL query directly within the plugin code, but the web service is useful as it can be re-used by other applications.
 
+Blog post with more information here: http://ukqgis.wordpress.com/2013/11/01/how-the-west-was-won-or-qgis-rocks/
+
 *Readme amended and updated from original supplied by @mtravis.*
